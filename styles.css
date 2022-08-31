@@ -32,6 +32,7 @@ header {
 .flex {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #menu {
     display: flex;
@@ -84,10 +85,6 @@ p{
    #menu {
     display: none;
    }
-   .div-menu {
-    display: block;
-   }
-
   }
 
   #Nosotros{
@@ -98,3 +95,35 @@ p{
     justify-content: center;
 
   }
+
+  .seccion-nosotros {
+    color: white;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .nosotros-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imagen-nosotros {
+    width: 700px;
+    height: 300px;
+  
+  }
+
+  .contenido-nosotros {
+    margin: 10px 30px 10px 30px;
+
+  }
+
+  
+@media (max-width: 1400px) {
+    .imagen-nosotros {
+        width: 550px;
+        height: 250px;
+    }
+}
