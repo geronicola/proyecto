@@ -17,7 +17,7 @@ h1 {
 }
 
 .container {
-    width: 90%;
+    width: 90vw;
     margin: 0px auto;
 
 }
@@ -49,7 +49,7 @@ header {
 
 }
 
-#btn-ingresar {
+.boton {
     background-color: rgb(119, 73, 248);
     padding: 10px;
     color: white;
@@ -157,11 +157,13 @@ p{
   width: 240px;
   height: 175px;
   border-radius: 10px;
-  font-size: 40px;
+  
 
 }
 
-
+h2{
+  font-size: 40px;  
+}
 
 #categoria-red {
   background-color: rgb(220, 53, 69)
@@ -236,21 +238,37 @@ h4{
   
 }
 
+.contacto{
+    height: 400px;
+    width:100%;
+}
 .contacto-formulario {
   margin-top: 80px;
   height: 300px;
+  width: 290px;
 }
+
 
 .imagen-contacto {
   background-image: url("./Materiales/laptop-escritorio.jpg");
   background-position: center;
   background-size: cover;
   height: 250px;
-  width: 600px;
+  width: 450px;
+  margin-left:50px;
 }
 
-.contacto-grid {
+#contacto-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 20px;
+  font-size: 18px;
+  gap: 10px;
 }
+
+.contacto-left{
+    grid-area: "left";
+}
+.contacto-right{
+    grid-area: "right";
+}
+

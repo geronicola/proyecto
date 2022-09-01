@@ -20,7 +20,7 @@
                     <li>Ayuda<li>
                 </ul>  
             </div>
-            <button id="btn-ingresar">INGRESAR</button>
+            <button class="boton">INGRESAR</button>
 
         </header>    
     </div>  
@@ -179,21 +179,24 @@
         
             </div>
             <div class="contacto-formulario">
-
-                <h2>Contacto</h2>
                 <form action="">
-                    <div class="contacto-grid">
+                    <div id="contacto-grid">
                         <div class="contacto-left categoria">
-                            <label for="">Nombre</label>
-                            <input type="text" placeholder="Ingresar Nombre">
-                
-                            <label for="">Email</label>
-                            <input type="text" placeholder="Ingresar email">
+                            <div>
+                                <label for="">Nombre</label>
+                                <input type="text" placeholder="Ingresar Nombre">
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <input type="text" placeholder="Ingresar email">
+                            </div>
                         </div>
                         <div class="contacto-right categoria">
                             <label for="">Mensaje</label>
                             <textarea placeholder="Escriba su mensaje "> </textarea>
+                            <button class="boton">Enviar</button>
                         </div>
+                    </div>
                     </div>
                 </form>
             </div>
