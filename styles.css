@@ -16,10 +16,39 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+textarea {
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  border-color: rgb(208, 210, 210);
+  padding: 5px;
+}
+
+input {
+  border-radius: 5px;
+  border-color: rgb(208, 210, 210);
+  padding: 5px;
+ 
+}
+
+p{
+  gap:8px;
+  font-size: 17px;
+}
+
+
 .container {
     width: 90vw;
     margin: 0px auto;
-
+  
 }
 
 header {
@@ -73,10 +102,6 @@ main{
     color: white;
 }
 
-p{
-    gap:8px;
-    font-size: 17px;
-}
 
 
 @media (max-width: 390px) {
@@ -103,13 +128,7 @@ p{
     
   }
 
-  h2 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 20px;
-  }
+  
 
 
   .imagen-nosotros {
@@ -234,18 +253,27 @@ h4{
     width: 290px;
     background-color: rgba(246, 243, 243, 0.937);
     padding-bottom: 20px;
-    margin-left: 5px;
+    margin-right: 5px;
   
 }
 
 .contacto{
     height: 400px;
-    width:100%;
+    width: 100%;
 }
 .contacto-formulario {
   margin-top: 80px;
   height: 300px;
-  width: 290px;
+  width: 400px;
+}
+
+.contacto-formulario h2 {
+  margin-bottom: 20px;
+}
+
+form button {
+  margin-top: 10px;
+  width: 80px;
 }
 
 
@@ -255,7 +283,7 @@ h4{
   background-size: cover;
   height: 250px;
   width: 450px;
-  margin-left:50px;
+  margin-right: 50px;
 }
 
 #contacto-grid {
@@ -266,9 +294,9 @@ h4{
 }
 
 .contacto-left{
-    grid-area: "left";
+  height: 120px;
 }
 .contacto-right{
-    grid-area: "right";
+  height: 120px;
 }
 
