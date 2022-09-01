@@ -138,9 +138,14 @@ p{
     }
 }
 
+.white{
+    color:  white;
+}
+
 .contenido-categorias {
   text-align: center;
   margin-top: 80px;
+  color:black;
 }
 
 .contenido-categorias h2 {
@@ -151,7 +156,6 @@ p{
   padding: 30px 20px 0px 20px;
   width: 240px;
   height: 175px;
-  color:  white;
   border-radius: 10px;
   font-size: 40px;
 
@@ -198,3 +202,21 @@ p{
   font-weight: lighter;
 }
 
+.imagen-noticias{
+    width: 240px;
+    height:175px
+
+}
+
+.seccion-noticias{
+    color:black;
+}
+
+h4{
+   font-size: 25px; 
+}
+
+.categoria-noticias{
+    display:flex;
+    justify-content: space-evenly;
+}
