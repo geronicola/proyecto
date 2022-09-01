@@ -235,3 +235,22 @@ h4{
     margin-left: 5px;
   
 }
+
+.contacto-formulario {
+  margin-top: 80px;
+  height: 300px;
+}
+
+.imagen-contacto {
+  background-image: url("./Materiales/laptop-escritorio.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 600px;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+}
