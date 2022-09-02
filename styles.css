@@ -308,6 +308,7 @@ footer{
     font-family: 'DM Sans';
     display: grid;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 #imagen-footer{
@@ -325,7 +326,7 @@ footer{
     display:flex;
     justify-content: space-around;
     font-weight: bold;
-
+    border-bottom: 1px solid white;
 
 }
 #footer-left{
@@ -338,4 +339,22 @@ footer li{
 
 #footer-right{
     margin-bottom: 80px;
+}
+
+
+
+#imagen-modal {
+  background-image: url("./Materiales/imagen-modal.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+ height: 450px;
+}
+
+#card {
+  height: 200px;;
+}
+#card-left {
+ background-color: #5298ff;
 }
