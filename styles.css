@@ -300,3 +300,42 @@ form button {
   height: 120px;
 }
 
+footer{
+    height: 180px;
+    width:100%;
+    background-color: rgb(119, 73, 248);
+    color:white;
+    font-family: 'DM Sans';
+    display: grid;
+    align-items: center;
+}
+
+#imagen-footer{
+    height: 30px;
+    width:140px;
+    margin-bottom:80px;
+}
+
+.imagenes-redes{
+    height:20px;
+    width:20px;
+}
+
+#flex-footer{
+    display:flex;
+    justify-content: space-around;
+    font-weight: bold;
+
+
+}
+#footer-left{
+    padding-right: 180px;
+    
+}
+footer li{
+    margin-bottom: 10px;
+}
+
+#footer-right{
+    margin-bottom: 80px;
+}
