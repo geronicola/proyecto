@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 p {
@@ -63,6 +63,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 #menu {
     display: flex;
@@ -341,7 +347,10 @@ footer li{
     margin-bottom: 80px;
 }
 
-
+#flex-registrar{
+    display:flex;
+    justify-content: space-around;
+}
 
 #imagen-modal {
   background-image: url("./Materiales/imagen-modal.JPG");
@@ -353,8 +362,37 @@ footer li{
 }
 
 #card {
-  height: 200px;;
+  height: 180px;
+  width: 400px;
+  border: 1px solid rgb(84, 85, 86);
+  border-radius: 10px;
+
 }
 #card-left {
+ height:180px;  
+ width: 70px;
  background-color: #5298ff;
+ border-radius: 10px;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ 
+
+}
+#card-left img{
+ height: 35px;
+
+}
+
+#arrow{
+    transform: rotate(-180deg);
+}
+
+#btn-close-cross{
+    height:20px;
+    width:20px;
+}
+
+aside h2{
+    font-size: 20px;
 }
