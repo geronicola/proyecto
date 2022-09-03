@@ -1,7 +1,7 @@
 body{
     margin:0px;
     font-family: 'DM Sans';
-    
+    position: relative;
 }
 
 p, h1, h2, h4{
@@ -21,13 +21,17 @@ h2 {
   font-size: 35px;
 }
 
+h4 {
+  font: 26px;
+}
+
 p {
   font-size: 20px;
 }
 
 textarea {
   height: 60px;
-  width: 100%;
+ 
   border-radius: 5px;
   border-color: rgb(208, 210, 210);
   padding: 5px;
@@ -55,6 +59,7 @@ p{
 header {
     padding: 10px;
     display: flex;
+ 
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
@@ -64,6 +69,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .flex2{
@@ -181,7 +187,7 @@ main{
   margin-bottom: 25px;
 }
 .categoria {
-  margin: 20px auto; 
+  margin: 0 auto; 
   padding: 30px 20px 0px 20px;
   width: 240px;
   height: 175px;
@@ -235,9 +241,11 @@ h2{
 
 
 .noticias {
-  margin: 80px 0px 0px 0px;
+  margin: 80px auto;
   background-color: rgba(234, 232, 238, 0.848);
-  height: 620px;
+  max-height: 1100px;
+  width: 100%;
+  
 }
 
 .noticias h2 {
@@ -245,9 +253,8 @@ h2{
   color: rgb(84, 85, 86);
 }
 .imagen-noticias{
-    width: 280px;
-    height: 200px
-
+   max-width: 280px;
+    max-height: 200px
 }
 
 .seccion-noticias{
@@ -268,23 +275,14 @@ h4{
 }
 
 .contacto{
-    height: 400px;
-    width: 100%;
+    width: auto;
+    margin: 50px auto;
 }
 .contacto-formulario {
-  margin-top: 80px;
-  height: 300px;
-  width: 400px;
+  height: 250px;
+  max-width: 400px;
 }
 
-.contacto-formulario h2 {
-  margin-bottom: 20px;
-}
-
-form button {
-  margin-top: 10px;
-  width: 80px;
-}
 
 
 .imagen-contacto {
@@ -293,10 +291,15 @@ form button {
   background-size: cover;
   height: 250px;
   width: 450px;
-  margin-right: 50px;
 }
 
-#contacto-grid {
+form button {
+  margin-top: 10px;
+  width: 80px;
+}
+
+/** Usar clase para luego poder pisarla con el media */
+.contacto-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 18px;
@@ -304,13 +307,16 @@ form button {
 }
 
 .contacto-left{
-  height: 120px;
+ 
 }
 .contacto-right{
-  height: 120px;
+
 }
 
 footer{
+    position: relative;
+    bottom: 0;
+    margin: 50px 0px 0px 0px;
     height: 180px;
     width:100%;
     background-color: rgb(119, 73, 248);
@@ -327,7 +333,7 @@ footer{
 
 #imagen-footer{
     height: 30px;
-    width:140px;
+    
     margin-bottom:80px;
 }
 
@@ -344,7 +350,7 @@ footer{
 
 }
 #footer-left{
-    padding-right: 180px;
+   
     
 }
 footer li{
@@ -352,7 +358,7 @@ footer li{
 }
 
 #footer-right{
-    margin-bottom: 80px;
+    
 }
 
 #flex-registrar{
@@ -464,6 +470,45 @@ aside h2{
     #menu {
      display: none;
     }
+    .nosotros-media{
+      display:none;
+  }
+  .categoria {
+    margin: 0 auto;
+    width: 230px;
+    height: 200px;
+    font: 16px;
+  }
+  .categoria h4 {
+    font-size: 20px;
+  }
+  .categoria p {
+    font-size: 16px;
+  }
+  .imagen-noticias {
+    width: 200px;
+    height: 120px;
+  
+  }
+  .categoria-media{
+      display:block;
+  }
+  
+  .noticias-media{
+      display:block;
+  }
+  .imagen-contacto {
+    display: none;
+  }
+  .contacto-media{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;      
+  }
+
+  .flex-footer{
+      display:block;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -479,24 +524,7 @@ aside h2{
     }
 }
 
-@media (max-width: 390px){
-    .nosotros-media{
-        display:none;
-    }
-    .categoria-media{
-        display:block;
-    }
-    .noticias-media{
-        display:block;
-    }
-    .contacto-media{
-        display:block;
-    }
-    .footer-media{
-        display:block;
-    }
 
-}
 
 
 
