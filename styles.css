@@ -70,6 +70,21 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+
+#overlay{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 #menu {
     display: flex;
     width: 300px;
@@ -349,7 +364,19 @@ footer li{
 
 #flex-registrar{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+#modal {
+  position: fixed;
+  display: none;
+  background-color: rgb(255, 254, 254);
+  margin: 20px;
+  border-radius: 10px;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+
 }
 
 #imagen-modal {
@@ -361,26 +388,67 @@ footer li{
  height: 450px;
 }
 
-#card {
-  height: 180px;
-  width: 400px;
-  border: 1px solid rgb(84, 85, 86);
-  border-radius: 10px;
-
+#contenido-modal {
+  height: 450px;
+  margin: 25px;
+  text-align: center;
 }
-#card-left {
- height:180px;  
+
+.card {
+  height: 150px;
+  width: 400px;
+  margin: 25px 0px 10px 0px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card-left {
+ height: 150px;  
  width: 70px;
- background-color: #5298ff;
- border-radius: 10px;
+ 
+ border-top-left-radius: 10px;
+ border-bottom-left-radius: 10px;
  display:flex;
  align-items: center;
  justify-content: center;
- 
 
 }
-#card-left img{
- height: 35px;
+#card-empresa {
+  background-color: #5298ff;
+}
+#card-organizacion {
+  background-color: rgb(119, 73, 248);
+}
+
+.card-right{
+ margin: 15px 0px 5px 20px;
+ color: rgb(202, 199, 199);
+ text-align: start;
+
+}
+
+.card-right h2 {
+  margin-bottom: 10px;
+}
+
+#card-right1 h2{
+  color: #5298ff;
+ }
+
+ #card-right1 h2{
+  color: rgb(119, 73, 248);
+ }
+
+ .card-right p {
+  font-size: 18px;
+  /* Definir un ancho fijo para que el texto se tire hacia abajo width:295px o margin-left:20px */
+  margin-right: 20px;
+ }
+
+
+.card-left img{
+  height: 35px;
 
 }
 

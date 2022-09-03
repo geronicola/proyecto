@@ -10,11 +10,12 @@
 </head>
 <body>
 
+    <div id="overlay"></div>
     <aside id="modal">
         <div class="flex">
-            <div id="imagen-modal">
-            
-            </div>
+            <!-- Imagen de fondo del modal -->
+            <div id="imagen-modal"></div>
+            <!-- Contenido del Modal-->
             <div id="contenido-modal">
                 <div id="flex-registrar">
                     <div id="btn-close-arrow">
@@ -23,16 +24,26 @@
                     </div>
                     <img id="btn-close-cross" src="Materiales/cerrar.png" alt="icono cerrar">   
                 </div>
+
                 <h2>REGISTRAR</h2>
 
-                <div id="card">
-                    <div id="card-left"> 
+                <div class="card">
+                    <span class="card-left" id="card-empresa"> 
                         <img src="./Materiales/icono-maletin.png" alt="">
-                    </div>
-                    <div id="card-right">
+                    </span>
+                    <span class="card-right" id="card-right-1">
                         <h2>MI EMPRESA</h2>
-                        <p>sdafffsafsafsafsf</p>
-                    </div>
+                        <p>Breve explicacion a lo que nos referimos</p>
+                    </span>
+                </div>
+                <div class="card">
+                    <span class="card-left" id="card-organizacion"> 
+                        <img src="./Materiales/icono-maletin.png" alt="">
+                    </span>
+                    <span class="card-right" id="card-right-2">
+                        <h2>MI ORGANIZACIÓN</h2>
+                        <p>Estamos para ayudarlos a tener éxito</p>
+                    </span>
                 </div>
             </div>
         </div>
@@ -254,7 +265,7 @@
     </footer>
 
 
-    
+    <script src="./app.js"></script>
 
 </body>
 </html>
