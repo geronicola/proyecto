@@ -316,11 +316,11 @@ footer{
     background-color: rgb(119, 73, 248);
     color:white;
     font-family: 'DM Sans';
-    display: grid;
+    display: flex;
     align-items: center;
-    padding-bottom: 20px;
-    position:relative;
-    bottom:0;
+    justify-content:space-around
+    
+
     
 
 }
